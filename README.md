@@ -1,6 +1,6 @@
-# Nom final de la formation
+# L’essentiel de Fabric Real-Time Intelligence
 
-Ce dossier Repository est lié au cours `Nom final de la formation`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
+Ce dossier Repository est lié au cours `L’essentiel de Fabric Real-Time Intelligence`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
 ![Nom final de la formation][lil-thumbnail-url] 
 
@@ -41,13 +41,13 @@ Afin de résoudre ce souci, vous devez :
 
 ### Formateur
 
-**Nom du formateur** 
+**Christophe Gigax** 
 
 Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com
 [lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG0eDHsyOSqTA/learning-public-crop_675_1200/B4EZVdqqdwHUAY-/0/1741033220778?e=2147483647&v=beta&t=FxUDo6FA8W8CiFROwqfZKL_mzQhYx9loYLfjN-LNjgA
-[lil-URL-trainer]: https://
+[lil-URL-trainer]: https://www.linkedin.com/learning/instructors/christophe-gigax
 
 [1]: # (End of FR-Instruction ###############################################################################################)
