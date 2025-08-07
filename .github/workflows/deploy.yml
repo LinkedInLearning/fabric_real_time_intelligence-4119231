@@ -39,7 +39,7 @@ jobs:
         run: terraform validate
 
       - name: Terraform Plan
-        run: terraform plan -var="env=${{ env.TF_ENV }}" -var-file="envs/${{ env.TF_ENV }}.tfvars"
+        run: terraform plan -var="env=${{ env.TF_ENV }}" -var-file="terraform/envs/${{ env.TF_ENV }}.tfvars"
 
       - name: Terraform Apply
-        run: terraform apply -auto-approve -var="env=${{ env.TF_ENV }}" -var-file="envs/${{ env.TF_ENV }}.tfvars"
+        run: terraform apply -auto-approve -var="env=${{ env.TF_ENV }}" -var-file="terraform/envs/${{ env.TF_ENV }}.tfvars"
