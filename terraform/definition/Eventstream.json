@@ -1,7 +1,8 @@
 {
-  "source": [
+  "compatibilityLevel": "1.0",
+  "sources": [
     {
-      "name": "sample_bicycle_eventstream",
+      "name": "sample_stockmarket_eventstream",
       "type": "SampleData",
       "properties": {
         "type": "StockMarket"
@@ -10,14 +11,16 @@
   ],
   "streams": [
     {
-      "name": "bicycle-stream",
+      "name": "stockmarket-stream",
       "type": "DefaultStream",
       "properties": {},
       "inputNodes": [
         {
-          "name": "sample_bicycle_eventstream"
+          "name": "sample_stockmarket_eventstream"
         }
       ]
     }
-  ]
+  ],
+  "destinations": [],
+  "operators": []
 }

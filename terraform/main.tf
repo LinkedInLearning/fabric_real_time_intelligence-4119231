@@ -10,6 +10,7 @@ terraform {
 
 provider "fabric" {
   use_cli = true
+  preview = true
 }
 
 data "fabric_capacity" "testfabricgigax" {
@@ -26,7 +27,6 @@ resource "fabric_eventstream" "demo_stream" {
   workspace_id = fabric_workspace.demo.id
   description  = "Eventstream de démonstration pour vélos"
   format       = "Default"
-  definition_update_enabled = false
   definition = {
     "eventstream.json" = {
       source = "definition/Eventstream.json"
@@ -35,14 +35,25 @@ resource "fabric_eventstream" "demo_stream" {
 }
 
 resource "fabric_eventhouse" "demo_house" {
-  display_name              = "demo_eventhouse"
-  description               = "Example with definition bootstrapping"
-  workspace_id              = fabric_workspace.demo.id
-  format                    = "Default"
-  definition_update_enabled = false # <-- Disable definition update
+  display_name = "demo_eventhouse"
+  description  = "Example with definition bootstrapping"
+  workspace_id = fabric_workspace.demo.id
+  format       = "Default"
   definition = {
     "EventhouseProperties.json" = {
       source = "definition/EventhouseProperties.json"
+    }
+  }
+}
+
+resource "fabric_activator" "demo_activator" {
+  display_name = "demo_activator"
+  description  = "Example of Activator"
+  workspace_id = fabric_workspace.demo.id
+  format       = "Default"
+  definition = {
+    "ReflexEntities.json" = {
+      source = "definition/ReflexEntities.json"
     }
   }
 }
