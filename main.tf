@@ -9,7 +9,6 @@ terraform {
 }
 
 provider "fabric" {
-  use_cli = true
   preview = true
 }
 
