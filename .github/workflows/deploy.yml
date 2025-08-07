@@ -1,5 +1,9 @@
 name: Deploy Terraform to Microsoft Fabric
 
+permissions:
+  id-token: write
+  contents: read
+
 on:
   workflow_dispatch:
     inputs:
@@ -16,8 +20,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
+      FABRIC_USE_OIDC: true
       FABRIC_CLIENT_ID: ${{ secrets.FABRIC_CLIENT_ID }}
-      FABRIC_CLIENT_SECRET: ${{ secrets.FABRIC_CLIENT_SECRET }}
       FABRIC_TENANT_ID: ${{ secrets.FABRIC_TENANT_ID }}
 
     steps:
