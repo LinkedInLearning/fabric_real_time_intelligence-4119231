@@ -1,0 +1,45 @@
+name: Deploy Terraform to Microsoft Fabric
+
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        description: "Environnement cible (ex: dev, prod)"
+        required: true
+        default: dev
+  push:
+    branches: [main]
+
+jobs:
+  terraform:
+    name: Terraform Apply
+    runs-on: ubuntu-latest
+
+    env:
+      FABRIC_CLIENT_ID: ${{ secrets.FABRIC_CLIENT_ID }}
+      FABRIC_CLIENT_SECRET: ${{ secrets.FABRIC_CLIENT_SECRET }}
+      FABRIC_TENANT_ID: ${{ secrets.FABRIC_TENANT_ID }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.8.5
+
+      - name: Set environment variable
+        run: echo "TF_ENV=${{ github.event.inputs.env || 'dev' }}" >> $GITHUB_ENV
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Validate
+        run: terraform validate
+
+      - name: Terraform Plan
+        run: terraform plan -var="env=${{ env.TF_ENV }}" -var-file="envs/${{ env.TF_ENV }}.tfvars"
+
+      - name: Terraform Apply
+        run: terraform apply -auto-approve -var="env=${{ env.TF_ENV }}" -var-file="envs/${{ env.TF_ENV }}.tfvars"
