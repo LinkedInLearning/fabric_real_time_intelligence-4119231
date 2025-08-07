@@ -9,8 +9,9 @@ terraform {
 }
 
 provider "fabric" {
-  preview  = true
-  use_oidc = true
+  preview   = true
+  use_msi   = true
+  tenant_id = "c632aa72-4ab9-485e-a0bd-2b8004cefd74"
 }
 
 data "fabric_capacity" "testfabricgigax" {
