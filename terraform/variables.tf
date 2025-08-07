@@ -18,3 +18,8 @@ variable "subscription_id" {
   type        = string
   description = "Azure Subscription ID"
 }
+
+variable "env" {
+  type        = string
+  description = "Nom logique de l’environnement (dev, prod, etc.)"
+}

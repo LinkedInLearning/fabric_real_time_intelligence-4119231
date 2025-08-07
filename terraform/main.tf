@@ -18,7 +18,7 @@ data "fabric_capacity" "testfabricgigax" {
 }
 
 resource "fabric_workspace" "demo" {
-  display_name = "demo-workspace"
+  display_name = "demo-workspace-${var.env}"
   capacity_id  = data.fabric_capacity.testfabricgigax.id
 }
 
