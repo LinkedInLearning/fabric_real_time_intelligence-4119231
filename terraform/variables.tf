@@ -18,18 +18,3 @@ variable "subscription_id" {
   type        = string
   description = "Azure Subscription ID"
 }
-
-variable "workspace_name" {
-  type        = string
-  default     = "demo-workspace"
-}
-
-variable "eventstream_name" {
-  type        = string
-  default     = "demo-eventstream"
-}
-
-variable "location" {
-  type        = string
-  default     = "East US"
-}

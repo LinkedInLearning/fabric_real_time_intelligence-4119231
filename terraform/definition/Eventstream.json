@@ -1,0 +1,23 @@
+{
+  "source": [
+    {
+      "name": "sample_bicycle_eventstream",
+      "type": "SampleData",
+      "properties": {
+        "type": "StockMarket"
+      }
+    }
+  ],
+  "streams": [
+    {
+      "name": "bicycle-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "sample_bicycle_eventstream"
+        }
+      ]
+    }
+  ]
+}
