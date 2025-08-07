@@ -9,7 +9,8 @@ terraform {
 }
 
 provider "fabric" {
-  preview = true
+  preview  = true
+  use_oidc = true
 }
 
 data "fabric_capacity" "testfabricgigax" {
