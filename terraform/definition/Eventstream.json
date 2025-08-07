@@ -2,7 +2,7 @@
   "compatibilityLevel": "1.0",
   "sources": [
     {
-      "name": "sample_stockmarket_eventstream",
+      "name": "sample-stockmarket-eventstream",
       "type": "SampleData",
       "properties": {
         "type": "StockMarket"
@@ -16,7 +16,7 @@
       "properties": {},
       "inputNodes": [
         {
-          "name": "sample_stockmarket_eventstream"
+          "name": "sample-stockmarket-eventstream"
         }
       ]
     }

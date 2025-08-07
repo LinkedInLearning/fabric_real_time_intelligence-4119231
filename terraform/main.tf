@@ -35,7 +35,7 @@ resource "fabric_eventstream" "demo_stream" {
 }
 
 resource "fabric_eventhouse" "demo_house" {
-  display_name = "demo_eventhouse"
+  display_name = "demo-eventhouse"
   description  = "Example with definition bootstrapping"
   workspace_id = fabric_workspace.demo.id
   format       = "Default"
@@ -47,7 +47,7 @@ resource "fabric_eventhouse" "demo_house" {
 }
 
 resource "fabric_activator" "demo_activator" {
-  display_name = "demo_activator"
+  display_name = "demo-activator"
   description  = "Example of Activator"
   workspace_id = fabric_workspace.demo.id
   format       = "Default"
