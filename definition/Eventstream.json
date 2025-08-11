@@ -1,0 +1,26 @@
+{
+  "compatibilityLevel": "1.0",
+  "sources": [
+    {
+      "name": "sample-stockmarket-eventstream",
+      "type": "SampleData",
+      "properties": {
+        "type": "StockMarket"
+      }
+    }
+  ],
+  "streams": [
+    {
+      "name": "stockmarket-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "sample-stockmarket-eventstream"
+        }
+      ]
+    }
+  ],
+  "destinations": [],
+  "operators": []
+}
