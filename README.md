@@ -4,9 +4,9 @@ Ce dossier Repository est lié au cours `L’essentiel de Fabric Real-Time Intel
 
 ![L'essentiel de Microsoft Fabric Real-Rime Intelligence][lil-thumbnail-url] 
 
-Ce cours est intégré à GitHub Codespaces, un environnement de développement instantané « dans le nuage » qui offre toutes les fonctionnalités de votre IDE préféré sans nécessiter de configuration sur une machine locale. Avec Codespaces, vous pouvez vous exercer à partir de n'importe quelle machine, à tout moment, tout en utilisant un outil que vous êtes susceptible de rencontrer sur votre lieu de travail. Consultez la vidéo "Utiliser Codespaces sur GitHub" pour savoir comment démarrer.    
+L’essentiel de Fabric Real-Time Intelligence est une formation animée par Christophe Gigax et dédiée aux professionnels de la donnée souhaitant maîtriser les capacités temps réel de Microsoft Fabric. Vous y découvrirez comment construire des pipelines de données temps réel, exploiter Eventstream et Eventhouse, interroger les données avec KQL, créer des dashboards dynamiques avec Power BI, définir des alertes, et automatiser vos déploiements avec Terraform. Grâce à des cas d’usage concrets (monitoring, détection d’anomalies, supervision), vous apprendrez à transformer des flux en décisions immédiates. À l’issue du cours, vous saurez concevoir des solutions temps réel robustes, efficaces et prêtes pour la production.
 
-DESCRIPTION DE LA FORMATION
+Ce cours est intégré à GitHub Codespaces, un environnement de développement instantané « dans le nuage » qui offre toutes les fonctionnalités de votre IDE préféré sans nécessiter de configuration sur une machine locale. Avec Codespaces, vous pouvez vous exercer à partir de n'importe quelle machine, à tout moment, tout en utilisant un outil que vous êtes susceptible de rencontrer sur votre lieu de travail. Consultez la vidéo "Utiliser Codespaces sur GitHub" pour savoir comment démarrer.    
 
 ## Instructions
 
@@ -31,8 +31,7 @@ Afin de résoudre ce souci, vous devez :
 
 ## Installation
 
-1. Pour utiliser ces fichiers d’exercice, vous avez besoin de : 
-   - l'outil Terraform installé 
+1. Pour utiliser ces fichiers d’exercice, vous avez besoin de l'outil Terraform installé 
 2. Clonez ce dossier Repository sur votre machine locale (Mac), CMD (Windows), ou sur un outil GUI tel que SourceTree. 
 
 
