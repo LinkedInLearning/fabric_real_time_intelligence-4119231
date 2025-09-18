@@ -43,7 +43,7 @@ Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG0eDHsyOSqTA/learning-public-crop_675_1200/B4EZVdqqdwHUAY-/0/1741033220778?e=2147483647&v=beta&t=FxUDo6FA8W8CiFROwqfZKL_mzQhYx9loYLfjN-LNjgA
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D560DAQH5v1lgkG-t6A/learning-public-crop_675_1200/B56ZlblSg3HMAY-/0/1758178126643?e=2147483647&v=beta&t=alQgKl7zwhsk6BgFaj8jzSLGKlR2JvM0iTIn7IvOqu4
 [lil-URL-trainer]: https://www.linkedin.com/learning/instructors/christophe-gigax
 
 [1]: # (End of FR-Instruction ###############################################################################################)
